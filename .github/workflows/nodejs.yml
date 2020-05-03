@@ -2,7 +2,7 @@ name: LINE notify
 
 on:
   schedule:
-  - cron:  '*/5 * * * *'
+  - cron:  '*/1 * * * *'
   # 5分ごと # ここだけ変更
 
 jobs:
@@ -34,4 +34,4 @@ jobs:
     # Secret の LINE_TOKEN 値 を action.js に渡している
     # LINE Notify にメッセージが行く
     - name: LINE Notify app.js
-      run: LINE_TOKEN=${{secrets.LINE_TOKEN}} node action.js
+      run: LINE_TOKEN=${{secrets.LINE_TOKEN}} node actiontenki.js
