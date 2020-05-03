@@ -4,6 +4,7 @@
   "description": "",
   "main": "action.js",
   "scripts": {
+    "start": "git add . && git commit -m 'update' && git push origin master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
