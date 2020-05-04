@@ -13,6 +13,10 @@ async function updateData(newData){
 async function getRequest() {
   let response;
   try {
+      //天気
+    response = await axios.get('http://weather.livedoor.com/forecast/webservice/json/v1?city=130010');
+    const text = response.data.description.text;
+
     response = await axios.get('https://transit.yahoo.co.jp/traininfo/detail/21/0/');
     // console.log(response.data);
     let html = response.data;
@@ -30,7 +34,8 @@ async function getRequest() {
 
     const saveData = {
         date: jikan,
-        msg: unko
+        msg: unko,
+        tenki: text
     }
 
     await updateData(saveData); //データ更新関数を実行
