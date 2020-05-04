@@ -20,11 +20,14 @@
 
             methods: {
                 getData: async function(){
-                    const response = await axios.get('data.json')
+                    //const response = await axios.get('data.json')
+                    const response = await axios.get('https://aws.random.cat/meow');
                     console.log(response.data);
                     this.message = response.data
                 },
             },
+
+
 
             mounted: function(){
                 this.getData();
