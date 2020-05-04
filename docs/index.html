@@ -1,37 +1,32 @@
-<html>
-  <head>
-    <title>Hello My WebSite!</title>
-  </head>
-  <body>
-    <p>Hello, ProtoOut!</p>
-
-    <div id="app">
-        {{ message }}
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        const app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            },
-
-            methods: {
-                getData: async function(){
-                    const response = await axios.get('data.json')
-                    console.log(response.data);
-                    this.message = response.data
-                },
-            },
-
-
-
-            mounted: function(){
-                this.getData();
-            }
-        })
-    </script>
-  </body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="ROBOTS" content="ALL">
+<meta name="description" content="ホームページの説明文">
+<meta name="keywords" content="キーワード,キーワード,キーワード">
+<title>ホームページ作成</title>
+<link rel="stylesheet" href="css/hp.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!--header部分-->
+<div id="header">
+<p>ホームページ作成</p>
+</div>
+<!--header部分終わり-->
+<!--contents部分-->
+<div id="contents">ココに本文</div>
+<!--contents部分終わり-->
+<!--sidebar部分-->
+<div id="sidebar">サイド部分</div>
+<!--sidebar部分終わり-->
+<!--footer部分-->
+<div id="footer">
+<p>Copyright（C） ********　All Rights Reserved</p>
+</div>
+<!--footer部分終わり-->
+</div>
+</body>
 </html>
