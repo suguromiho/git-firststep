@@ -6,8 +6,12 @@
     <p>Hello, ProtoOut!</p>
 
     <div id="app">
-        {{ message }}
-    </div>
+      <ul>
+          <li>時間: {{ message.date }}</li>
+          <li>運行情報: {{ message.msg }}</li>
+          <li>天気: {{ message.tenki }}</li>
+      </ul>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
