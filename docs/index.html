@@ -20,8 +20,7 @@
 
             methods: {
                 getData: async function(){
-                    //const response = await axios.get('data.json')
-                    const response = await axios.get('https://aws.random.cat/meow');
+                    const response = await axios.get('data.json')
                     console.log(response.data);
                     this.message = response.data
                 },
