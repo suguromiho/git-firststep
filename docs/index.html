@@ -2,12 +2,21 @@
   <head>
     <title>Hello My WebSite!</title>
   </head>
-
   <body>
-    <p>Suguro</p>
+    <p>Hello, ProtoOut!</p>
 
+    <div id="app">
+        {{ message }}
+    </div>
 
-
-    <p>Link</p> <a href=”https://qiita.com/suguromiho”>https://qiita.com/suguromiho</a><br>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
   </body>
 </html>
