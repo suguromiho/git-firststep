@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/1ft-seabass/git-firststep#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }
